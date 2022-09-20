@@ -1,0 +1,149 @@
+body {
+  background-color: #f2f2f2;
+}
+nav,
+footer {
+  background-color: #f76c6c;
+}
+nav {
+  padding: 3px;
+}
+h1,
+h2,
+a {
+  color: white;
+}
+h2 {
+  margin: 5px;
+}
+ul {
+  padding: 0;
+  margin-bottom: 5px;
+}
+li {
+  display: inline;
+  padding: 5px;
+}
+li a {
+  list-style: none;
+  text-decoration: none;
+}
+h1 {
+  background-image: url(bears.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 15px 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #e2e2e2;
+  background-color: white;
+  margin: 10px;
+
+  font-weight: bold;
+}
+p {
+  text-align: justify;
+}
+footer p {
+  padding: 10px;
+  font-size: 10px;
+}
+/*@media screen and (min-width: 360vw) {
+  body {
+    margin-left: 40px;
+  }
+  nav,
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 20px;
+  }
+  li {
+    padding: 0;
+  }
+  h1 {
+    margin-top: 0;
+    min-height: 50vw;
+  }
+  div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h3,
+  .article1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  section {
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+  }
+  ul {
+    margin: 0 120px 0 0;
+  }
+  h1 {
+    margin: 0;
+    background-size: cover;
+  }
+  main {
+  }
+}
+*/
+
+@media screen and (min-width: 360px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  li {
+    padding: 0;
+  }
+
+  .paragraphSection {
+    width: 87vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #featuredPosts {
+    max-width: 87vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .article1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  section {
+    color: #f76c6c;
+  }
+  footer {
+    max-width: 87vw;
+  }
+}
